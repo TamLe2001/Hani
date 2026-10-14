@@ -2,7 +2,7 @@
 set -e
 cd "$(dirname "$0")"
 
-JAVA="/usr/lib/jvm/temurin-8-jre/bin/java"
+JAVA="/usr/lib/jvm/temurin-8-jdk-arm64/bin/java"
 
 if [ ! -x "$JAVA" ]; then
     echo "Java 8 not found at $JAVA"
@@ -20,4 +20,4 @@ if [ ${#jars[@]} -ne 1 ]; then
     exit 1
 fi
 
-exec "$JAVA" -Xms1G -Xmx2G -jar "${jars[0]}" nogui
+exec "$JAVA" -Xms4G -Xmx5G -jar "${jars[0]}" nogui

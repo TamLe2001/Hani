@@ -1,0 +1,10 @@
+
+[general]
+	#Disable the mob farm when there is no chest/full chest to prevent loot from spilling out. Recommended on server.
+	disableWhenChestFull = false
+	#Mobs to be blacklisted. e.g. 'minecraft:cow' for cows.
+	blacklist = []
+	#The durability of lasso. -1 for infinite.
+	#Range: > -2
+	lassoDurability = 128
+

@@ -20,4 +20,4 @@ if [ ${#jars[@]} -ne 1 ]; then
     exit 1
 fi
 
-exec "$JAVA" -Xms4G -Xmx5G -jar "${jars[0]}" nogui
+exec "$JAVA" -Xms3G -Xmx6G -jar "${jars[0]}" nogui
